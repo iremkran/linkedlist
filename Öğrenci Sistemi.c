@@ -1,4 +1,4 @@
-//İrem Kıran
+//Ä°rem KÄ±ran
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -15,7 +15,7 @@ node *ekle(node *head)
     
     node *ogr=(node *)malloc(sizeof(node));
 
-    printf("İsim Soyisim:");
+    printf("Ãsim Soyisim:");
     scanf("%s %s",&ogr->ad,&ogr->soyad);
     printf("Numara:");
     scanf("%d",&ogr->no);
@@ -28,7 +28,7 @@ node *ekle(node *head)
     {
         ogr->next=head;
         head=ogr;
-        printf("Öğrenci Eklendi \n");
+        printf("Ã–Ã°renci Eklendi \n");
 
 
     }
@@ -40,7 +40,7 @@ node *sil(node *head)
 {	
   
         int ogrNo;
-        printf("Öğrenci Numarası: ");
+        printf("Ã–Ã°renci NumarasÃ½: ");
         scanf("%d",&ogrNo);
        	node *temp=head;
             node *iter=head;
@@ -50,7 +50,7 @@ node *sil(node *head)
                 {
                     iter->next=temp->next;
                     free(temp);
-                    printf("Öğrenci Silindi \n",ogrNo);
+                    printf("Ã–Ã°renci Silindi \n",ogrNo);
                     break;
                 }
                 iter=temp;
@@ -60,7 +60,7 @@ node *sil(node *head)
             {
                 iter->next==NULL;
                 free(temp);
-                printf("Öğrenci Silindi\n",ogrNo);
+                printf("Ã–Ã°renci Silindi\n",ogrNo);
             }
             return head;
         }
@@ -70,7 +70,7 @@ node *sil(node *head)
 {	
   
         int ogrNo;
-        printf("Öğrenci Numarası: ");
+        printf("Ã–Ã°renci NumarasÃ½: ");
         scanf("%d",&ogrNo);
        	node *temp=head;
         node *iter=head;
@@ -79,8 +79,8 @@ node *sil(node *head)
         {
             iter->next=temp->next;
                     
-            printf("Öğrencinin Ad Soyadı:%s %s\n",temp->ad,temp->soyad);
-            printf("Öğrencinin Numarası:%d\n",temp->no);
+            printf("Ã–Ã°rencinin Ad SoyadÃ½:%s %s\n",temp->ad,temp->soyad);
+            printf("Ã–Ã°rencinin NumarasÃ½:%d\n",temp->no);
 
 
                   
@@ -92,8 +92,8 @@ node *sil(node *head)
         {
             iter->next==NULL;
             
-                printf("Öğrencinin Ad Soyadı:%s %s\n",temp->ad,temp->soyad);
-                printf("Öğrencinin Numarası:%d\n",temp->no);
+                printf("Ã–Ã°rencinin Ad SoyadÃ½:%s %s\n",temp->ad,temp->soyad);
+                printf("Ã–Ã°rencinin NumarasÃ½:%d\n",temp->no);
 
         }
         return head;
@@ -104,10 +104,10 @@ node *yazdir(node *head)
 {
     
     node o1,o2;
-    strcpy(o1.ad, "Serpil Üstebay");
+    strcpy(o1.ad, "Serpil Ãœstebay");
     o1.no =123456;
 
-    strcpy(o2.ad, "Ayşe Gül");
+    strcpy(o2.ad, "AyÃ¾e GÃ¼l");
     o2.no =123457;
   
 
@@ -134,12 +134,12 @@ int main()
     node *head=NULL;
     while(1)
     {
-        printf("\tÖĞRENCİ BİLGİ SİSTEMİ\n");
-        printf("1-Öğrenci Ekle \n");
-        printf("2-Öğrenci Sil \n");
-        printf("3-Öğrencileri Yazdır \n");
-        printf("4-Öğrenci Bul \n");
-        printf("5-Çıkış \n");
+        printf("\tÃ–ÃRENCÃ BÃLGÃ SÃSTEMÃ\n");
+        printf("1-Ã–Ã°renci Ekle \n");
+        printf("2-Ã–Ã°renci Sil \n");
+        printf("3-Ã–Ã°rencileri YazdÃ½r \n");
+        printf("4-Ã–Ã°renci Bul \n");
+        printf("5-Ã‡Ã½kÃ½Ã¾ \n");
         scanf("%d",&secim);
         switch(secim)
         {
@@ -162,7 +162,7 @@ int main()
             exit(0);
             break;
         default:
-            printf("Lütfen geçerli sayıları giriniz!");
+            printf("LÃ¼tfen geÃ§erli sayÃ½larÃ½ giriniz!");
         }
 
 
